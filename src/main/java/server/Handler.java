@@ -1,2 +1,8 @@
-package Server;public interface Handler {
+package server;
+
+import java.io.BufferedOutputStream;
+
+@FunctionalInterface
+public interface Handler {
+    void handle(Request request, BufferedOutputStream outputStream);
 }
